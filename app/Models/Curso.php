@@ -8,7 +8,7 @@ class  Curso
 
     private $codCurso;
 
-    public function __construct()
+    public function __construct($nomCurso,$codCurso)
     {
         $this->nomCurso = $nomCurso;
         $this->codCurso =$codCurso;

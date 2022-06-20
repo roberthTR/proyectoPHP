@@ -12,23 +12,20 @@ class   Matricula
        $this->arregloCur = [];
     }
 
-    public function agregarEst(Estudiante $estudiante, Curso $curso)
+    public function agregarEst(Estudiante $estudiante)
     {
         $this->arregloEst[] = $estudiante;
-        $this->arregloCur[] = $curso;
-        
     }
 
     public function agregarCur(Curso $curso)
     {
         $this->arregloCur[] = $curso;
-       
     }
 
     public function listarEst()
     {
         return $this->arregloEst;
-        return $this->arregloCur;
+       
     }
 
     public function listarCur()
